@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Dashboard | AttendWise</title>
+  <link rel="stylesheet" href="css/dashboard.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>👨‍🎓 AttendWise</h1>
+      <div class="user-info">
+        <span id="studentName">Welcome, Student</span>
+        <button onclick="logout()">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="dashboard">
+    <section class="card">
+      <h2>📅 Your Attendance</h2>
+      <p><strong>Class:</strong> BSc Biochemistry</p>
+      <p><strong>Total Days:</strong> 120</p>
+      <p><strong>Present:</strong> 108</p>
+      <p><strong>Percentage:</strong> <span class="highlight">90%</span></p>
+    </section>
+
+    <section class="card">
+      <h2>📝 Mark Attendance</h2>
+      <button id="markBtn">Mark Attendance Now</button>
+      <p id="markStatus"></p>
+    </section>
+
+    <section class="card">
+      <h2>🔔 Notifications</h2>
+      <ul class="notifications">
+        <li>📌 Your attendance is above 85%. Great job!</li>
+        <li>📌 Class test on Friday. Be prepared!</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>🙍‍♂️ Profile & Settings</h2>
+      <p><strong>Username:</strong> sahilyaduvanshi</p>
+      <p><strong>Email:</strong> sahil@example.com</p>
+      <button>Edit Profile</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 AttendWise | Smart Attendance System</p>
+  </footer>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

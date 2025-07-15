@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard | AttendWise</title>
+  <link rel="stylesheet" href="css/dashboard-admin.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>🎓 AttendWise - Admin Panel</h1>
+      <div class="user-info">
+        <span id="adminName">Welcome, Chairperson</span>
+        <button onclick="logout()">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="dashboard">
+    <section class="card">
+      <h2>🗂 View All Attendance Records</h2>
+      <button onclick="viewAttendance()">View Records</button>
+      <div id="attendanceRecords"></div>
+    </section>
+
+    <section class="card">
+  <h2>👥 Manage Users</h2>
+  <button onclick="window.location.href='add-user.html'">➕ Add User</button>
+<button onclick="window.location.href='remove-user.html'">➖ Remove User</button>
+
+  <button onclick="viewAllUsers()">👀 View All Users</button>
+
+  <div id="userActions"></div>
+</section>
+
+
+    <section class="card">
+      <h2>📊 Attendance Analytics</h2>
+      <button onclick="generateReport()">Generate Report</button>
+      <div id="reportResults"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 AttendWise | Admin Panel</p>
+  </footer>
+
+  <script src="js/dashboard-admin.js"></script>
+</body>
+</html>

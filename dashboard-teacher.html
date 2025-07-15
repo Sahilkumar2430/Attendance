@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Teacher Dashboard | AttendWise</title>
+  <link rel="stylesheet" href="css/dashboard-teacher.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>📘 AttendWise - Teacher Panel</h1>
+      <div class="user-info">
+        <span id="teacherName">Hello, Mr. Sharma</span>
+        <button onclick="logout()">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="dashboard">
+    <section class="card">
+      <h2>🏫 Select Department, Course & Subject</h2>
+
+      <label for="department">Department:</label>
+      <select id="department">
+        <option value="">-- Select Department --</option>
+        <option value="cse">Computer Science</option>
+        <option value="me">Mechanical Engineering</option>
+        <option value="ee">Electrical Engineering</option>
+        <option value="ce">Civil Engineering</option>
+        <option value="bt">Biotechnology</option>
+      </select>
+
+      <label for="course">Course:</label>
+      <select id="course" disabled>
+        <option value="">-- Select Course --</option>
+      </select>
+
+      <label for="subject">Subject:</label>
+      <select id="subject" disabled>
+        <option value="">-- Select Subject --</option>
+      </select>
+    </section>
+
+    <section class="card">
+      <h2>✅ Start Attendance</h2>
+      <button onclick="startAttendance()">Start Attendance</button>
+      <p id="attendanceStatus"></p>
+    </section>
+
+    <section class="card">
+      <h2>📥 Submit Complaint</h2>
+      <form id="complaintForm">
+        <input type="text" id="studentName" placeholder="Student Name" required />
+        <textarea id="complaintText" placeholder="Write complaint..." rows="4" required></textarea>
+        <button type="submit">Submit Complaint</button>
+        <p id="complaintStatus"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 AttendWise | Empowering Education</p>
+  </footer>
+
+  <script src="js/dashboard-teacher.js"></script>
+</body>
+</html>

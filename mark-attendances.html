@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mark Attendance | AttendWise</title>
+  <link rel="stylesheet" href="css/mark-attendances.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>📋 Mark Attendance</h1>
+
+    <div class="info">
+      <p><strong>Department:</strong> <span id="deptText"></span></p>
+      <p><strong>Course:</strong> <span id="courseText"></span></p>
+      <p><strong>Subject:</strong> <span id="subjectText"></span></p>
+    </div>
+
+    <table>
+      <thead>
+  <tr>
+    <th>Roll No.</th>
+    <th>Student Name</th>
+    <th>Status</th>
+    <th>Remove</th>
+  </tr>
+</thead>
+
+      <tbody id="studentTable">
+        <!-- Students will be inserted here -->
+      </tbody>
+    </table>
+    <h3>Add New Student</h3>
+<form id="addStudentForm">
+  <input type="text" id="newRoll" placeholder="Roll No." required />
+  <input type="text" id="newName" placeholder="Student Name" required />
+  <button type="submit">➕ Add Student</button>
+</form>
+
+
+    <button id="submitAttendanceBtn">✅ Submit Attendance</button>
+    <p id="statusMessage"></p>
+    <br />
+    <a href="dashboard-teacher.html">⬅️ Back to Dashboard</a>
+  </div>
+
+  <script src="js/mark-attendances.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Dashboard | AttendWise</title>
+  <link rel="stylesheet" href="css/dashboard-student.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>🎓 AttendWise – Student Dashboard</h1>
+      <div class="user-info">
+        <span id="studentName">Welcome, Student</span>
+        <button onclick="logout()">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="dashboard">
+    <section class="card">
+      <h2>📅 My Attendance</h2>
+      <button onclick="viewMyAttendance()">View Records</button>
+      <div id="attendanceRecords"></div>
+    </section>
+
+    <section class="card">
+      <h2>🔔 Notifications</h2>
+      <ul id="notifications">
+        <li>🕑 Submit assignments before Friday</li>
+        <li>✅ Last attendance update: July 14</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>⚙️ Profile & Settings</h2>
+      <p><strong>Name:</strong> <span id="profileName">Loading...</span></p>
+      <p><strong>Email:</strong> <span id="profileEmail">Loading...</span></p>
+      <p><strong>Course:</strong> <span id="profileCourse">Loading...</span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 AttendWise | Student Panel</p>
+  </footer>
+
+  <script src="js/dashboard-student.js"></script>
+</body>
+</html>
