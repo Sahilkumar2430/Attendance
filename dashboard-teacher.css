@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #f1faff);
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: #003366;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-info {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.user-info button {
+  background: #00d4ff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  color: #003366;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+main.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  flex: 1;
+}
+
+.card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0, 47, 108, 0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card h2 {
+  margin-bottom: 1rem;
+  color: #003366;
+}
+
+.class-list, .notifications {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.class-list li, .notifications li {
+  padding: 0.4rem 0;
+  border-bottom: 1px dashed #ccc;
+}
+
+select, button {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  margin-top: 0.8rem;
+  border: 1px solid #ccc;
+}
+
+select:focus {
+  outline: none;
+  border-color: #00c0e6;
+}
+
+button {
+  background: #003366;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background: #00509e;
+}
+
+#attendanceStatus {
+  color: green;
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  background: #f1f1f1;
+  padding: 1rem;
+}

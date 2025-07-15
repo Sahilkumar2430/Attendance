@@ -1,0 +1,45 @@
+body {
+  font-family: 'Outfit', sans-serif;
+  background: #e1f5fe;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container {
+  background: white;
+  max-width: 500px;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+h1 {
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.info p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0057b7;
+}
+
+#statusMessage {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: green;
+}

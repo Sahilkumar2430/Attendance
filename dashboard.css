@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #e1f5fe);
+  color: #222;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: #002f6c;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-info button {
+  padding: 6px 14px;
+  background: #00d4ff;
+  border: none;
+  border-radius: 6px;
+  color: #002f6c;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+main.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  flex: 1;
+}
+
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 47, 108, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card h2 {
+  margin-bottom: 1rem;
+  color: #004a99;
+}
+
+.highlight {
+  color: green;
+  font-weight: bold;
+}
+
+button#markBtn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #002f6c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button#markBtn:hover {
+  background: #004a99;
+}
+
+.notifications {
+  list-style: none;
+  padding-left: 0;
+}
+
+.notifications li {
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed #ccc;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #f0f0f0;
+  font-size: 0.9rem;
+}
